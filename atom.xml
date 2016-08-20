@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-20T03:18:34.000Z</updated>
+  <updated>2016-08-20T03:26:44.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,28 +16,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>写在开头</title>
     <link href="http://yoursite.com/2016/08/19/%E5%86%99%E5%9C%A8%E5%BC%80%E5%A4%B4/"/>
     <id>http://yoursite.com/2016/08/19/写在开头/</id>
     <published>2016-08-19T06:53:11.000Z</published>
-    <updated>2016-08-20T03:18:34.000Z</updated>
+    <updated>2016-08-20T03:26:44.000Z</updated>
     
-    <content type="html"><![CDATA[<p>title: 写在开头<br>date: 2016-08-19 14:53:11<br>tags:</p>
-<ul>
-<li>励志</li>
-<li>记录<h2 id="三行情诗"><a href="#三行情诗" class="headerlink" title="三行情诗"></a>三行情诗</h2>螃蟹在剥我的壳，<br>笔记本在写我，<br>缤纷的我落在雪花上，<br>而你在想我。</li>
-</ul>
+    <content type="html"><![CDATA[<h2 id="三行情诗"><a href="#三行情诗" class="headerlink" title="三行情诗"></a>三行情诗</h2><p>螃蟹在剥我的壳，<br>笔记本在写我，<br>缤纷的我落在雪花上，<br>而你在想我。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;title: 写在开头&lt;br&gt;date: 2016-08-19 14:53:11&lt;br&gt;tags:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;励志&lt;/li&gt;
-&lt;li&gt;记录&lt;h2 id=&quot;三行情诗&quot;&gt;&lt;a href=&quot;#三行情诗&quot; class=&quot;headerlink&quot; title=&quot;三行情诗
+      &lt;h2 id=&quot;三行情诗&quot;&gt;&lt;a href=&quot;#三行情诗&quot; class=&quot;headerlink&quot; title=&quot;三行情诗&quot;&gt;&lt;/a&gt;三行情诗&lt;/h2&gt;&lt;p&gt;螃蟹在剥我的壳，&lt;br&gt;笔记本在写我，&lt;br&gt;缤纷的我落在雪花上，&lt;br&gt;而你在想我。&lt;/p&gt;
+
     
     </summary>
     
+    
+      <category term="励志" scheme="http://yoursite.com/tags/%E5%8A%B1%E5%BF%97/"/>
+    
+      <category term="记录" scheme="http://yoursite.com/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
