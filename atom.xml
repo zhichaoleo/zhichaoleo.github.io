@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-26T10:29:23.000Z</updated>
+  <updated>2016-08-26T10:47:20.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://yoursite.com/2016/08/26/MarkDown%E8%AF%AD%E6%B3%95%E7%9A%84MOU%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3%E7%A4%BA%E4%BE%8B/"/>
     <id>http://yoursite.com/2016/08/26/MarkDown语法的MOU帮助文档示例/</id>
     <published>2016-08-26T03:15:44.000Z</published>
-    <updated>2016-08-26T10:29:23.000Z</updated>
+    <updated>2016-08-26T10:47:20.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>
-<h1 id="Mou"><a href="#Mou" class="headerlink" title="Mou"></a>Mou</h1><p><img src="http://25.io/mou/Mou_128.png" alt="Mou icon"></p>
+    <content type="html"><![CDATA[<h1 id="MarkDown语法的MOU帮助文档示例"><a href="#MarkDown语法的MOU帮助文档示例" class="headerlink" title="MarkDown语法的MOU帮助文档示例"></a>MarkDown语法的MOU帮助文档示例</h1><a id="more"></a>
+<p><img src="http://25.io/mou/Mou_128.png" alt="Mou icon"></p>
 <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p><strong>Mou</strong>, the missing Markdown editor for <em>web developers</em>.</p>
 <h3 id="Syntax"><a href="#Syntax" class="headerlink" title="Syntax"></a>Syntax</h3><h4 id="Strong-and-Emphasize"><a href="#Strong-and-Emphasize" class="headerlink" title="Strong and Emphasize"></a>Strong and Emphasize</h4><p><strong>strong</strong> or <strong>strong</strong> ( Cmd + B )</p>
 <p><em>emphasize</em> or <em>emphasize</em> ( Cmd + I )</p>
@@ -31,7 +31,7 @@
 <h4 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h4><blockquote>
 <p>Right angle brackets &gt; are used for block quotes.</p>
 </blockquote>
-<h4 id="Links-and-Email"><a href="#Links-and-Email" class="headerlink" title="Links and Email"></a>Links and Email</h4><p>An email <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#101;&#120;&#x61;&#109;&#112;&#108;&#101;&#x40;&#x65;&#120;&#97;&#109;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;">&#101;&#120;&#x61;&#109;&#112;&#108;&#101;&#x40;&#x65;&#120;&#97;&#109;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a> link.</p>
+<h4 id="Links-and-Email"><a href="#Links-and-Email" class="headerlink" title="Links and Email"></a>Links and Email</h4><p>An email <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#101;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#64;&#x65;&#120;&#97;&#109;&#112;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#109;">&#101;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#64;&#x65;&#120;&#97;&#109;&#112;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#109;</a> link.</p>
 <p>Simple inline link <a href="http://chenluois.com" target="_blank" rel="external">http://chenluois.com</a>, another inline link <a href="http://25.io/smaller/" target="_blank" rel="external">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension" target="_blank" rel="external">Resize</a>.</p>
 <p>A <a href="http://25.io/mou/" title="Markdown editor on Mac OS X" target="_blank" rel="external">reference style</a> link. Input id, then anywhere in the doc, define the link with corresponding id:</p>
 <p>Titles ( or called tool tips ) in the links are optional.</p>
@@ -207,8 +207,7 @@ var Mou = exactlyTheAppIwant;
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;Mou&quot;&gt;&lt;a href=&quot;#Mou&quot; class=&quot;headerlink&quot; title=&quot;Mou&quot;&gt;&lt;/a&gt;Mou&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://25.io/mou/Mou_128.png&quot; alt=&quot;Mou
+      &lt;h1 id=&quot;MarkDown语法的MOU帮助文档示例&quot;&gt;&lt;a href=&quot;#MarkDown语法的MOU帮助文档示例&quot; class=&quot;headerlink&quot; title=&quot;MarkDown语法的MOU帮助文档示例&quot;&gt;&lt;/a&gt;MarkDown语法的MOU帮助文档示例&lt;/h1&gt;
     
     </summary>
     
@@ -224,20 +223,18 @@ var Mou = exactlyTheAppIwant;
     <link href="http://yoursite.com/2016/08/19/%E5%86%99%E5%9C%A8%E5%BC%80%E5%A4%B4/"/>
     <id>http://yoursite.com/2016/08/19/写在开头/</id>
     <published>2016-08-19T06:53:11.000Z</published>
-    <updated>2016-08-26T10:29:37.000Z</updated>
+    <updated>2016-08-26T10:46:40.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>
-<h1 id="三行情诗"><a href="#三行情诗" class="headerlink" title="三行情诗"></a>三行情诗</h1><p>螃蟹在剥我的壳，<br>笔记本在写我，缤纷的我落在雪花上，<br>而你在想我。</p>
+    <content type="html"><![CDATA[<h1 id="三行情诗"><a href="#三行情诗" class="headerlink" title="三行情诗"></a>三行情诗</h1><a id="more"></a>
+<p>螃蟹在剥我的壳，<br>笔记本在写我，缤纷的我落在雪花上，<br>而你在想我。</p>
 <blockquote>
-<p>只有颠倒世界，你才会喜欢上我。</p>
+<p>或许只有颠倒整个世界，<br>你才会喜欢我。</p>
 </blockquote>
 ]]></content>
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;三行情诗&quot;&gt;&lt;a href=&quot;#三行情诗&quot; class=&quot;headerlink&quot; title=&quot;三行情诗&quot;&gt;&lt;/a&gt;三行情诗&lt;/h1&gt;&lt;p&gt;螃蟹在剥我的壳，&lt;br&gt;笔记本在写我，缤纷的我落在雪花上，&lt;br&gt;而你在想我。&lt;/p&gt;
-
+      &lt;h1 id=&quot;三行情诗&quot;&gt;&lt;a href=&quot;#三行情诗&quot; class=&quot;headerlink&quot; title=&quot;三行情诗&quot;&gt;&lt;/a&gt;三行情诗&lt;/h1&gt;
     
     </summary>
     
