@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-26T11:45:06.000Z</updated>
+  <updated>2016-08-26T13:51:14.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2016/08/26/%E4%BF%84%E8%80%8C%E5%88%99%E4%BF%84/"/>
+    <id>http://yoursite.com/2016/08/26/俄而则俄/</id>
+    <published>2016-08-26T13:11:30.000Z</published>
+    <updated>2016-08-26T13:51:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<p>title: 俄而则俄与极光的瞎想<br>comments: true/false</p>
+<p>date: 2016-08-26 21:11:30<br>tags:<br>  -旅行<br>categories:记录<br>photos:</p>
+<ul>
+<li><a href="http://oc8mbq27q.bkt.clouddn.com/IMG_6129.jpg" target="_blank" rel="external">http://oc8mbq27q.bkt.clouddn.com/IMG_6129.jpg</a></li>
+<li><a href="http://oc8mbq27q.bkt.clouddn.com/IMG_5974.jpg" target="_blank" rel="external">http://oc8mbq27q.bkt.clouddn.com/IMG_5974.jpg</a></li>
+<li><a href="http://oc8mbq27q.bkt.clouddn.com/IMG_6136.jpg" target="_blank" rel="external">http://oc8mbq27q.bkt.clouddn.com/IMG_6136.jpg</a></li>
+<li><a href="http://oc8mbq27q.bkt.clouddn.com/IMG_5969.jpg" target="_blank" rel="external">http://oc8mbq27q.bkt.clouddn.com/IMG_5969.jpg</a></li>
+<li><a href="http://oc8mbq27q.bkt.clouddn.com/IMG_6125.jpg" target="_blank" rel="external">http://oc8mbq27q.bkt.clouddn.com/IMG_6125.jpg</a></li>
+<li><a href="http://oc8mbq27q.bkt.clouddn.com/IMG_6101.jpg" target="_blank" rel="external">http://oc8mbq27q.bkt.clouddn.com/IMG_6101.jpg</a></li>
+<li><a href="http://oc8mbq27q.bkt.clouddn.com/IMG_6130.jpg" target="_blank" rel="external">http://oc8mbq27q.bkt.clouddn.com/IMG_6130.jpg</a></li>
+<li><p><a href="http://oc8mbq27q.bkt.clouddn.com/IMG_6129.jpg" target="_blank" rel="external">http://oc8mbq27q.bkt.clouddn.com/IMG_6129.jpg</a></p>
+<blockquote>
+<p>我是一个向往外面世界的人，从小缺爱，长大缺钙。不热爱家乡，不留恋家人。我的梦在未知的远方，因为那儿有一个我期待的人，她能给我理解，关心，爱与温暖。没有人知道，我拼命读书，只是为了离开家乡。在前世的记忆里，我爱的人，在远方。–by zhihu</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>后来，我慢慢发现，我并不是想去什么地方，而是想寻找一个地方，那有爱我的也有我爱的人。</p>
+</blockquote>
+<p><em>我现在只想去瑞典Abisko，想去挪威Lofoten群岛，想去阿拉斯加，不仅仅因为那里有极光，还因为那里没什么人，有人的地方我已经没什么兴趣了。</em></p>
+<p><img src="http://oc8mbq27q.bkt.clouddn.com/%E6%9E%81%E5%85%89.jpg" alt=""></p>
+<p>（其实就一图片测试文，求不打脸😅）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;title: 俄而则俄与极光的瞎想&lt;br&gt;comments: true/false&lt;/p&gt;
+&lt;p&gt;date: 2016-08-26 21:11:30&lt;br&gt;tags:&lt;br&gt;  -旅行&lt;br&gt;categories:记录&lt;br&gt;photos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;l
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2016/08/26/test/"/>
+    <id>http://yoursite.com/2016/08/26/test/</id>
+    <published>2016-08-26T13:07:13.000Z</published>
+    <updated>2016-08-26T13:07:13.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>MarkDown语法的MOU帮助文档示例</title>
@@ -33,7 +92,7 @@
 <h4 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h4><blockquote>
 <p>Right angle brackets &gt; are used for block quotes.</p>
 </blockquote>
-<h4 id="Links-and-Email"><a href="#Links-and-Email" class="headerlink" title="Links and Email"></a>Links and Email</h4><p>An email <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#101;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#64;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;">&#101;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#64;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a> link.</p>
+<h4 id="Links-and-Email"><a href="#Links-and-Email" class="headerlink" title="Links and Email"></a>Links and Email</h4><p>An email <a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;">&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;</a> link.</p>
 <p>Simple inline link <a href="http://chenluois.com" target="_blank" rel="external">http://chenluois.com</a>, another inline link <a href="http://25.io/smaller/" target="_blank" rel="external">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension" target="_blank" rel="external">Resize</a>.</p>
 <p>A <a href="http://25.io/mou/" title="Markdown editor on Mac OS X" target="_blank" rel="external">reference style</a> link. Input id, then anywhere in the doc, define the link with corresponding id:</p>
 <p>Titles ( or called tool tips ) in the links are optional.</p>
@@ -225,7 +284,7 @@ var Mou = exactlyTheAppIwant;
     <link href="http://yoursite.com/2016/08/19/%E5%86%99%E5%9C%A8%E5%BC%80%E5%A4%B4/"/>
     <id>http://yoursite.com/2016/08/19/写在开头/</id>
     <published>2016-08-19T06:53:11.000Z</published>
-    <updated>2016-08-26T10:53:53.000Z</updated>
+    <updated>2016-08-26T10:55:31.000Z</updated>
     
     <content type="html"><![CDATA[<p>很短，但字里行间饱含着无奈和深情</p>
 <blockquote>
