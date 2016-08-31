@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-31T15:14:39.000Z</updated>
+  <updated>2016-08-31T15:23:23.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/08/31/%E6%B5%85%E6%9E%90%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://yoursite.com/2016/08/31/浅析逻辑回归（一）/</id>
     <published>2016-08-31T14:59:52.000Z</published>
-    <updated>2016-08-31T15:14:39.000Z</updated>
+    <updated>2016-08-31T15:23:23.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>优点：计算代价低，易于实现。</p>
@@ -37,15 +37,18 @@
 <blockquote>
 <p>根据现有数据对分类边界线建立回归公式，以此进行数据的分类。<br>可以注意到，我们建立的是回归公式。“回归”源于最佳拟合，这意味着我们要找到最佳的参数集，这个参数集需要我们通过数据训练得到。</p>
 </blockquote>
-<p>在这里，我们训练的方法将使用梯度上升法，还有它的改进版本，随机梯度上升法。<br><img src="http://upload-images.jianshu.io/upload_images/2789356-d00e58e56418aaf2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="梯度上升法"></p>
-<h3 id="1-2-构造分类器"><a href="#1-2-构造分类器" class="headerlink" title="1.2 构造分类器"></a>1.2 构造分类器</h3><p>为什么不使用海维赛德阶跃函数（单位阶跃函数）：<br>在跳跃点上瞬间从0跳跃到1，这个过程太激凸…<br>我们用sigmoid函数，温和不刺激~<br><img src="http://upload-images.jianshu.io/upload_images/2789356-2bbb64e633c61a5d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2789356-39066ba21a82d721.gif?imageMogr2/auto-orient/strip" alt="SigmoidFunction"><br>这样我们就有了基本的构件模型，下一步就是函数的输入z<br>我们将特征变量乘以回归系数再全部累加得到Z:</p>
+<p>在这里，我们训练的方法将使用梯度上升法，还有它的改进版本，随机梯度上升法。<br><img src="http://oc8mbq27q.bkt.clouddn.com/2789356-d00e58e56418aaf2.png" alt="梯度上升法"></p>
+<h3 id="1-2-构造分类器"><a href="#1-2-构造分类器" class="headerlink" title="1.2 构造分类器"></a>1.2 构造分类器</h3><p>为什么不使用海维赛德阶跃函数（单位阶跃函数）：<br>在跳跃点上瞬间从0跳跃到1，这个过程太激凸…<br>我们用sigmoid函数，温和不刺激~</p>
+<p><img src="http://oc8mbq27q.bkt.clouddn.com/2789356-2bbb64e633c61a5d.png" alt=""></p>
+<p><img src="http://oc8mbq27q.bkt.clouddn.com/2789356-39066ba21a82d721.gif" alt="SigmoidFunction"></p>
+<p>这样我们就有了基本的构件模型，下一步就是函数的输入z<br>我们将特征变量乘以回归系数再全部累加得到Z:</p>
 <blockquote>
 <p>z=w0x0 + w1x1 + w2x2 …. + wnxn</p>
 </blockquote>
-<p>其输出分大于0.5和小于0.5，表示两个类别，也就实现了分类，确定了分类器的函数形式，接下来问题就是求最佳回归系数。（梯度上升法，随机梯度上升法）<br>主要思想：要找到某函数的最大值，最好的办法是沿着该函数的梯度方向探寻。<br><img src="http://upload-images.jianshu.io/upload_images/2789356-7740af7d44f77cfb?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>其输出分大于0.5和小于0.5，表示两个类别，也就实现了分类，确定了分类器的函数形式，接下来问题就是求最佳回归系数。（梯度上升法，随机梯度上升法）<br>主要思想：要找到某函数的最大值，最好的办法是沿着该函数的梯度方向探寻。<br><img src="http://oc8mbq27q.bkt.clouddn.com/2789356-7740af7d44f77cfb.png" alt=""></p>
 <p> 梯度是矢量，总是沿着函数值上升最快的方向移动，因此我们沿着梯度方向或者反方向行进时，就能达到一个函数的最大值（梯度上升法）或者最小值（梯度下降法），因此梯度上升算法就是不断更新梯度值，直到梯度不再变化或者变化很小，即函数达到了最大值<br>梯度算法的迭代公式为（alpha为步长，即每一步移动量）：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2789356-ef18dc550d7f779c?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>而我们常说的梯度下降法就是将其中的加号换为减号。</p>
+<p><img src="http://oc8mbq27q.bkt.clouddn.com/2789356-ef18dc550d7f779c.png" alt=""></p>
+<p>而我们常说的梯度下降法就是将其中的加号换为减号。</p>
 <blockquote>
 <p>梯度上升法用来寻找最大值，而梯度下降法用来寻找最小值。</p>
 </blockquote>
@@ -123,7 +126,7 @@
 <h4 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h4><blockquote>
 <p>Right angle brackets &gt; are used for block quotes.</p>
 </blockquote>
-<h4 id="Links-and-Email"><a href="#Links-and-Email" class="headerlink" title="Links and Email"></a>Links and Email</h4><p>An email <a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x40;&#x65;&#x78;&#x61;&#x6d;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#109;">&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x40;&#x65;&#x78;&#x61;&#x6d;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#109;</a> link.</p>
+<h4 id="Links-and-Email"><a href="#Links-and-Email" class="headerlink" title="Links and Email"></a>Links and Email</h4><p>An email <a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#101;&#120;&#x61;&#x6d;&#112;&#108;&#101;&#64;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;">&#101;&#120;&#x61;&#x6d;&#112;&#108;&#101;&#64;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;</a> link.</p>
 <p>Simple inline link <a href="http://chenluois.com" target="_blank" rel="external">http://chenluois.com</a>, another inline link <a href="http://25.io/smaller/" target="_blank" rel="external">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension" target="_blank" rel="external">Resize</a>.</p>
 <p>A <a href="http://25.io/mou/" title="Markdown editor on Mac OS X" target="_blank" rel="external">reference style</a> link. Input id, then anywhere in the doc, define the link with corresponding id:</p>
 <p>Titles ( or called tool tips ) in the links are optional.</p>
