@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-06T13:23:49.000Z</updated>
+  <updated>2016-11-28T14:35:59.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,76 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>设计模式读书笔记(1)</title>
+    <link href="http://yoursite.com/2016/11/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/11/28/设计模式读书笔记/</id>
+    <published>2016-11-28T12:41:22.000Z</published>
+    <updated>2016-11-28T14:35:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>一切为了：可维护，可扩展，可服用，灵活性好。强内聚，松耦合。</p>
+<a id="more"></a>
+<h1 id="基本设计原则总结"><a href="#基本设计原则总结" class="headerlink" title="基本设计原则总结"></a>基本设计原则总结</h1><hr>
+<h2 id="1-单一职责原则"><a href="#1-单一职责原则" class="headerlink" title="1.单一职责原则"></a>1.单一职责原则</h2><blockquote>
+<p><strong><em>单一职责原则(SRP):就一个类而言，应该仅有一个引起它变化的原因</em></strong><br>-ASD</p>
+</blockquote>
+<p>软件设计真正要做的许多内容，就是发现职责并把那些职责互相分离[ASD]。其实，要分辨是否应该分离出类来也简单，那就是：<br><strong>如果你能够想到多于一个动机去改变一个类，那么这个类就具有多于一个的职责[ASD]</strong>。</p>
+<hr>
+<p>自我总结：</p>
+<p>我们在OOP编程最初特别容易犯一种错误，就是建一个类，然后把各种属性，各种行为函数往里面塞，这样在初期代码规模较小时没什么大问题，可以用，但是到后期，代码的维护，修改变得几乎不可行。可谓牵一发而动全身，标准的—&gt;弱内聚，强耦合。<br>我们在一开始设计整个程序的时候就应该考虑到这一点，划分好职责，通过UML类图去看，推敲，心里要明白各个类是负责什么的，相互关系又是什么，最好的办法是画好<strong><em>UML类图</em></strong>，直观的去看。</p>
+<h2 id="2-开放-封闭原则"><a href="#2-开放-封闭原则" class="headerlink" title="2.开放-封闭原则"></a>2.开放-封闭原则</h2><blockquote>
+<p><strong><em>开放-封闭原则，是说软件实体(类，函数，模块等等)应该可以扩展，但是不可以修改。[ASD]</em></strong></p>
+</blockquote>
+<p>一句话包含了两层意思：</p>
+<p>1，对于扩展是开放的（Open for extension）</p>
+<p>2, 对于更改是封闭的（Closed for modification）</p>
+<p>如果存在能让一个程序员给你拼命的事，一是你融了他的装备，二是改需求。面对不断更改的需求，牵一发动全身式的代码显然不行。问题就是：怎样的设计才能面对需求的改变却可以保持稳定，从而使得系统在第一个版本以后不断推出新的版本呢？<br>答案就是要严格遵守： <strong>开放-封闭原则</strong></p>
+<p>面对需求，对程序的修改是通过增加新代码完成的，而不是改现有代码。开放-封闭的意思就是，在设计类的时候，时刻要考虑，尽量让这个类足够好，写好了，就不去改了，如果新需求来了，我们增加一些新的类就完事儿了，原来的代码能不动就不动。</p>
+<p>实际上，这个很难做到，无论模块多么封闭，都会有一些无法对之封闭的方法，我们在遇到变化的时候要 <strong>ASAP</strong> 立即采取行动，利用抽象类来隔离那些变化。</p>
+<hr>
+<p>自我总结：</p>
+<p>最好是在开发开始后不久就可以知道可能会发生的变化，增加的需求。当然最好是不改需求。。。因为，查明可能发生的变化所等待的时间越长，要创建正确的抽象就越难。</p>
+<p>开放-封闭原则是OOP体现其价值的核心所在，遵循它就可以得到OOP的好处，</p>
+<blockquote>
+<p><strong><em>可维护，可扩展，可服用，灵活性好。</em></strong></p>
+</blockquote>
+<p>但是，我们不能瞎抽象，对于程序中的每个部分都刻意的进行抽象是不理智的。 拒绝不成熟的抽象，和抽象本身一样重要——ASD</p>
+<h2 id="3-依赖倒转原则"><a href="#3-依赖倒转原则" class="headerlink" title="3.依赖倒转原则"></a>3.依赖倒转原则</h2><blockquote>
+<p><strong><em>里氏代换原则(LSP):子类型必须能够替换掉他们的父类型。[ASD]</em></strong></p>
+</blockquote>
+<p>一个软件实体如果使用的是一个父类的话，那么一定适用于其子类，而且它觉察不出父类对象与子类对象的区别。也就是说，把代码里的父类对象全部换成子类对象，程序也一样运行，程序的行为没有任何改变。</p>
+<p>只有当子类可以替换掉父类，软件单位的功能不收到影响时，父类才能真正被复用，而子类也能够在父类的基础上增加新的行为。</p>
+<hr>
+<h2 id="gt-依赖倒转原则：抽象不应该依赖细节，细节应该依赖于抽象（接口或者抽象类）。其实就是，要针对借口编程，而不是针对实现编程。"><a href="#gt-依赖倒转原则：抽象不应该依赖细节，细节应该依赖于抽象（接口或者抽象类）。其实就是，要针对借口编程，而不是针对实现编程。" class="headerlink" title="&gt;依赖倒转原则：抽象不应该依赖细节，细节应该依赖于抽象（接口或者抽象类）。其实就是，要针对借口编程，而不是针对实现编程。"></a>&gt;<strong><em>依赖倒转原则：抽象不应该依赖细节，细节应该依赖于抽象（接口或者抽象类）。其实就是，要针对借口编程，而不是针对实现编程。</em></strong></h2><blockquote>
+<p><strong>依赖倒转原则：</strong></p>
+<p>A. 高层模块不应该依赖低层模块，二者都应该依赖于抽象。</p>
+<p>B. 抽象不应该依赖于细节，细节应该依赖于抽象。</p>
+</blockquote>
+<p>自我总结：</p>
+<p>正是有了Barbara Liskov女士提出的里氏代换原则，才使得开放-封闭得以实现，由于子类型的可替换性才使得我们可以在不修改父类的情形下，通过子类型进行扩展。</p>
+<p>如果不管高层模块还是低层模块都是依赖于抽象（抽象类或接口）那么，只要抽象是稳定的，那么对各个模块的任何更改都能确保不会影响到其他模块，这样就使得无论高层模块还是低层模块都可以被轻易地复用。</p>
+<p>依赖倒转可以被看作是OOP的标志，不局限于语言的具体实现，如果编写程序时，考虑的都是如何针对抽象编程而不是针对细节编程，即程序中所有的依赖关系都终止于抽象类或者接口，那么就可以说是面向对象程序设计，反之就是面向过程的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一切为了：可维护，可扩展，可服用，灵活性好。强内聚，松耦合。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技术，代码优化" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%EF%BC%8C%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/"/>
+    
+    
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+      <category term="面向对象" scheme="http://yoursite.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+      <category term="代码优化" scheme="http://yoursite.com/tags/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>浅析逻辑回归</title>
@@ -131,7 +201,7 @@
 <h4 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h4><blockquote>
 <p>Right angle brackets &gt; are used for block quotes.</p>
 </blockquote>
-<h4 id="Links-and-Email"><a href="#Links-and-Email" class="headerlink" title="Links and Email"></a>Links and Email</h4><p>An email <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#x40;&#x65;&#120;&#x61;&#109;&#112;&#108;&#101;&#46;&#99;&#x6f;&#109;">&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#x40;&#x65;&#120;&#x61;&#109;&#112;&#108;&#101;&#46;&#99;&#x6f;&#109;</a> link.</p>
+<h4 id="Links-and-Email"><a href="#Links-and-Email" class="headerlink" title="Links and Email"></a>Links and Email</h4><p>An email <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#101;&#x78;&#97;&#109;&#112;&#108;&#x65;&#64;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;">&#101;&#x78;&#97;&#109;&#112;&#108;&#x65;&#64;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;</a> link.</p>
 <p>Simple inline link <a href="http://chenluois.com" target="_blank" rel="external">http://chenluois.com</a>, another inline link <a href="http://25.io/smaller/" target="_blank" rel="external">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension" target="_blank" rel="external">Resize</a>.</p>
 <p>A <a href="http://25.io/mou/" title="Markdown editor on Mac OS X" target="_blank" rel="external">reference style</a> link. Input id, then anywhere in the doc, define the link with corresponding id:</p>
 <p>Titles ( or called tool tips ) in the links are optional.</p>
