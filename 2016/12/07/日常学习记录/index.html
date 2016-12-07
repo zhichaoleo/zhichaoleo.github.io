@@ -1,0 +1,1001 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="机器学习,双十一技术内幕,网络," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="百世经纶一页书" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="日常学习记录 之 双十一技术讲座学习
+报名参加了双十一技术交流大会，里面提到了一些技术，整理总结如下，有机会再深入研究。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="日常学习记录">
+<meta property="og:url" content="http://yoursite.com/2016/12/07/日常学习记录/index.html">
+<meta property="og:site_name" content="百世经纶一页书">
+<meta property="og:description" content="日常学习记录 之 双十一技术讲座学习
+报名参加了双十一技术交流大会，里面提到了一些技术，整理总结如下，有机会再深入研究。">
+<meta property="og:image" content="http://oc8mbq27q.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-07%20%E4%B8%8A%E5%8D%8811.07.46.png">
+<meta property="og:updated_time" content="2016-12-07T03:36:27.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="日常学习记录">
+<meta name="twitter:description" content="日常学习记录 之 双十一技术讲座学习
+报名参加了双十一技术交流大会，里面提到了一些技术，整理总结如下，有机会再深入研究。">
+<meta name="twitter:image" content="http://oc8mbq27q.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-07%20%E4%B8%8A%E5%8D%8811.07.46.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6320456535294084000,
+      author: '主编大人'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/12/07/日常学习记录/"/>
+
+  <title> 日常学习记录 | 百世经纶一页书 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?79bcb219d899cf385128660126a491e9";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">百世经纶一页书</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">记录我成长的点点滴滴</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '7pcVNjxmwDkvaCEeugBs','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                日常学习记录
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-07T10:15:36+08:00" content="2016-12-07">
+              2016-12-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/07/日常学习记录/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/07/日常学习记录/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/07/日常学习记录/" class="leancloud_visitors" data-flag-title="日常学习记录">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="日常学习记录-之-双十一技术讲座学习"><a href="#日常学习记录-之-双十一技术讲座学习" class="headerlink" title="日常学习记录 之 双十一技术讲座学习"></a>日常学习记录 之 双十一技术讲座学习</h1><blockquote>
+<p>报名参加了双十一技术交流大会，里面提到了一些技术，整理总结如下，有机会再深入研究。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h2><p>以下内容来自维基百科：</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0" target="_blank" rel="external">强化学习</a></p>
+<p>强化学习是机器学习中的一个领域，强调如何基于环境而行动，以取得最大化的预期利益。</p>
+<p>其灵感来源于心理学中的行为主义理论，即有机体如何在环境给予的奖励或惩罚的刺激下，逐步形成对刺激的预期，产生能获得最大利益的习惯性行为。这个方法具有普适性，因此在其他许多领域都有研究，例如博弈论、控制论、运筹学、信息论、模拟优化方法、多主体系统学习、群体智能、统计学以及遗传算法。在运筹学和控制理论研究的语境下，强化学习被称作“近似动态规划”（approximate dynamic programming，ADP）。</p>
+<p>在最优控制理论中也有研究这个问题，虽然大部分的研究是关于最优解的存在和特性，并非是学习或者近似方面。在经济学和博弈论中，强化学习被用来解释在有限理性的条件下如何出现平衡。</p>
+<p>在机器学习问题中，环境通常被规范为马可夫决策过程（MDP），所以许多强化学习算法在这种情况下使用动态规划技巧。传统的技术和强化学习算法的主要区别是，后者不需要关于MDP的知识，而且针对无法找到确切方法的大规模MDP。</p>
+<p>强化学习和标准的监督式学习之间的区别在于，它并不需要出现正确的输入/输出对，也不需要精确校正次优化的行为。强化学习更加专注于在线规划，需要在探索（在未知的领域）和遵从（现有知识）之间找到平衡。强化学习中的“探索-遵从”的交换，在多臂老虎机问题和有限MDP中研究得最多。</p>
+<p>基本的强化学习模型包括：<br>1.环境状态的集合  S;<br>2.动作的集合  A;<br>3.在状态之间转换的规则；<br>4.规定转换后“即时奖励”的规则；<br>5.描述主体能够观察到什么的规则。</p>
+<p>强化学习对于包含长期反馈的问题比短期反馈的表现更好。它在许多问题上得到应用，包括机器人控制、电梯调度、电信通讯、双陆棋和西洋跳棋。<br>强化学习的强大能来源于两个方面：使用样本来优化行为，使用函数近似来描述复杂的环境。它们使得强化学习可以使用在以下的复杂环境中：<br>模型的环境未知，且解析解不存在；<br>仅仅给出环境的模拟模型（模拟优化方法的问题）<br>从环境中获取信息的唯一办法是和它互动。前两个问题可以被考虑为规划问题，而最后一个问题可以被认为是genuine learning问题。使用强化学习的方法，这两种规划问题都可以被转化为机器学习问题。</p>
+<h2 id="双十一中的网络巡检"><a href="#双十一中的网络巡检" class="headerlink" title="双十一中的网络巡检"></a>双十一中的网络巡检</h2><p>作用是排查网络中的故障和隐患。</p>
+<p>巡查范围：逻辑资源，物理资源，协议状态等</p>
+<h3 id="逻辑资源："><a href="#逻辑资源：" class="headerlink" title="逻辑资源："></a>逻辑资源：</h3><h4 id="1-IP地址"><a href="#1-IP地址" class="headerlink" title="1.IP地址"></a>1.IP地址</h4><h4 id="2-VLAN"><a href="#2-VLAN" class="headerlink" title="2.VLAN"></a>2.VLAN</h4><p>虚拟局域网（VLAN）是一组逻辑上的设备和用户，这些设备和用户并不受物理位置的限制，可以根据功能、部门及应用等因素将它们组织起来，相互之间的通信就好像它们在同一个网段中一样，由此得名虚拟局域网。</p>
+<p>VLAN是一种比较新的技术，工作在OSI参考模型的第2层和第3层，一个VLAN就是一个广播域，VLAN之间的通信是通过第3层的路由器来完成的。与传统的局域网技术相比较，VLAN技术更加灵活，它具有以下优点： 网络设备的移动、添加和修改的管理开销减少；可以控制广播活动；可提高网络的安全性。</p>
+<p>在计算机网络中，一个二层网络可以被划分为多个不同的广播域，一个广播域对应了一个特定的用户组，默认情况下这些不同的广播域是相互隔离的。不同的广播域之间想要通信，需要通过一个或多个路由器。这样的一个广播域就称为VLAN。</p>
+<h4 id="3-MTU"><a href="#3-MTU" class="headerlink" title="3.MTU"></a>3.MTU</h4><p>通信术语 最大传输单元（Maximum Transmission Unit，MTU）是指一种通信协议的某一层上面所能通过的最大数据包大小（以字节为单位）。</p>
+<p>最大传输单元这个参数通常与通信接口有关（网络接口卡、串口等）。</p>
+<p>因为协议数据单元的包头和包尾的长度是固定的，MTU越大，则一个协议数据单元的承载的有效数据就越长，通信效率也越高。MTU越大，传送相同的用户数据所需的数据包个数也越低。</p>
+<p>MTU也不是越大越好，因为MTU越大， 传送一个数据包的延迟也越大；并且MTU越大，数据包中 bit位发生错误的概率也越大。<br>MTU越大，通信效率越高而传输延迟增大，所以要权衡通信效率和传输延迟选择合适的MTU。</p>
+<p>以以太网传送IPv4报文为例。MTU表示的长度包含IP包头的长度，如果IP层以上的协议层发送的数据报文的长度超过了MTU，则在发送者的IP层将对数据报文进行分片，在接收者的IP层对接收到的分片进行重组。</p>
+<p>这里举一个具体的例子说明IP包分片的原理：</p>
+<p>以太网的MTU值是1500 bytes，假设发送者的协议高层向IP层发送了长度为3008 bytes的数据报文，则该报文在添加20 bytes的IP包头后IP包的总长度是 3028 bytes，因为3028 &gt; 1500，所以该数据报文将被分片，分片过程如下：</p>
+<ol>
+<li>首先计算最大的IP包中IP净荷的长度 =MTU-IP包头长度=1500-20= 1480 bytes。</li>
+<li>然后把3028 bytes按照1480 bytes的长度分片，将要分为3片，3028= 1480+1480+68。</li>
+<li>最后发送者将为3个分片分别添加IP包头，组成3个IP包后再发送，3个IP包的长度分别为1500 bytes、1500 bytes和 88 bytes。<br>从以上分片例子可以看出第一、二个分片包组成的IP包的长度都等于MTU即1500 bytes。</li>
+</ol>
+<p>在网络通讯中，需要尽量避免发生分片和重组，因为分片重组对网络性能影响较大。数据包发送时选择合适的MTU大小对提高通讯性能很有必要。MTU大小的选择有协议协商方式，通过全路径的MTU发现机制，找到整条路径的最小MTU（也就是路径MTU），然后报文发送式小于等于路径MTU，这就避免了数据传输过程中产生分片，从而提高数据转发性能。MTU的协议发现机制由于安全等方面的原因，并不能总是生效，这时候就需要根据网络的特性选择合理的MTU。如果在报文传送过程中分片是不可避免的，那么要想办法让重组尽量在终端进行，避免在转发路径中进行。</p>
+<h4 id="4-NTP"><a href="#4-NTP" class="headerlink" title="4.NTP"></a>4.NTP</h4><p>NTP是网络时间协议(Network Time Protocol)，它是用来同步网络中各个计算机的时间的协议。</p>
+<p>在计算机的世界里，时间非常地重要，例如对于火箭发射这种科研活动，对时间的统一性和准确性要求就非常地高，是按照A这台计算机的时间，还是按照B这台计算机的时间？NTP就是用来解决这个问题的，NTP（Network Time Protocol，网络时间协议）是用来使网络中的各个计算机时间同步的一种协议。它的用途是把计算机的时钟同步到世界协调时UTC，其精度在局域网内可达0.1ms，在互联网上绝大多数的地方其精度可以达到1-50ms。</p>
+<p>它可以使计算机对其服务器或时钟源（如石英钟，GPS等等）进行时间同步，它可以提供高精准度的时间校正，而且可以使用加密确认的方式来防止病毒的协议攻击。</p>
+<p>NTP要提供准确的时间，就必须有准确的时间来源，那可以用格林尼治时间吗？答案是否定的。因为格林尼治时间是以地球自转为基础的时间计量系统，但是地球每天的自转是有些不规则的，而且正在缓慢加速，因此，格林尼治时间已经不再被作为标准时间使用。</p>
+<p>新的标准时间，是由原子钟报时的国际标准时间UTC（Universal Time Coordinated，世界协调时）。所以NTP获得UTC的时间来源可以是原子钟、天文台、卫星，也可以从Internet上获取。</p>
+<p>有了准确而可靠的的时间源，那这个时间如何传播呢？在NTP中，定义了时间按照服务器的等级传播，按照离外部UTC源远近将所有的服务器归入不同的Stratum（层）中，例如把通过GPS（Global Positioning System，全球定位系统）取得发送标准时间的服务器叫Stratum-1的NTP服务器，而Stratum-2则从Stratum-1获取时间，Stratum-3从Stratum-2获取时间，以此类推，但Stratum层的总数限制在15以内。所有这些服务器在逻辑上形成阶梯式的架构相互连接，而Stratum-1的时间服务器是整个系统的基础.</p>
+<p>计算机主机一般同多个时钟服务器连接，利用统计学的算法过滤来自不同服务器的时间，以选择最佳的路径和来源以便校正主机时间。即使在主机长时间无法与某一时钟服务器联系的情况下，NTP服务依然可以有效运转。</p>
+<p>为了防止对时钟服务器的恶意破坏，NTP使用了识别机制，检查发送来的信息是否是真正来自所宣称的时钟服务器并检查信息的返回路径，以提供对抗干扰的保护机制。[1] </p>
+<p>NTP时间同步报文中包含的时间是格林威治时间，是从1900年开始计算的秒数。</p>
+<h3 id="协议状态"><a href="#协议状态" class="headerlink" title="协议状态"></a>协议状态</h3><h4 id="网络协议的层次关系"><a href="#网络协议的层次关系" class="headerlink" title="网络协议的层次关系"></a>网络协议的层次关系</h4><p><img src="http://oc8mbq27q.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-07%20%E4%B8%8A%E5%8D%8811.07.46.png" alt="网络协议分布层次"></p>
+<h4 id="1-ISIS"><a href="#1-ISIS" class="headerlink" title="1.ISIS"></a>1.ISIS</h4><p>SIS是一个分级的链接状态路由协议，基于DECnet PhaseV 路由算法，实际上与OSPF非常相似，它也使用Hello协议寻找毗邻节点，使用一个传播协议发送链接信息。</p>
+<p>ISIS可以在不同的子网上操作，包括广播型的LAN、WAN和点到点链路。</p>
+<p>中间系统到中间系统（IS-IS，Intermediate system to intermediate system，意为“中间系统到中间系统”）是一种内部网关协议，是电信运营商普遍采用的内部网关协议之一。<br>标准的IS-IS协议是由国际标准化组织制定的ISO/IEC 10589:2002 所规范的。但是标准的IS-IS协议是为无连接网络服务（CLNS）设计的，并不直接适合于IP网络，因此互联网工程任务组制定了可以适用于IP网络的集成化的IS-IS协议，称为集成IS-IS，它由RFC 1195等RFC文档所规范。</p>
+<p>由于IP网络的普遍存在，一般所称的IS-IS协议，通常是指集成IS-IS协议。</p>
+<h4 id="2-OSPF"><a href="#2-OSPF" class="headerlink" title="2.OSPF"></a>2.OSPF</h4><p>以下内容来自维基百科：</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%BC%80%E6%94%BE%E5%BC%8F%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E4%BC%98%E5%85%88" target="_blank" rel="external">OSPF协议</a></p>
+<p>开放式最短路径优先（英语：Open Shortest Path First，缩写为OSPF）是对链路状态路由协议的一种实现，隶属内部网关协议（IGP），故运作于自治系统内部。采用戴克斯特拉算法（Dijkstra’s algorithm）被用来计算最短路径树。它使用“代价（Cost）”作为路由度量。链路状态数据库（LSDB）用来保存当前网络拓扑结构，路由器上属于同一区域的链路状态数据库是相同的（属于多个区域的路由器会为每个区域维护一份链路状态数据库）。OSPF分为OSPFv2和OSPFv3两个版本,其中OSPFv2用在IPv4网络，OSPFv3用在IPv6网络。OSPFv2是由RFC 2328定义的，OSPFv3是由RFC 5340定义的。</p>
+<p>OSPF协议是大中型网络上使用最为广泛的IGP（Interior Gateway Protocol）协议。节点在创建邻接，接受链路状态通告（Link-state Advertisement，LSA）时，可以通过MD5或者明文进行安全验证。<br>OSPF提出了“区域（Area）”的概念，一个网络可以由单一区域或者多个区域组成。其中，一个特别的区域被称为骨干区域（Backbone Area），该区域是整个OSPF网络的核心区域，并且所有其他的区域都与之直接连接。所有的内部路由都通过骨干区域传递到其他非骨干区域。所有的区域都必须直接连接到骨干区域，如果不能创建直接连接，那么可以通过虚拟链路（Virtual-link）和骨干区域创建虚拟连接。</p>
+<p>同一个广播域（Broadcast Domain）的路由器或者一个点对点（Point To Point）连接的两端的路由器，在发现彼此的时候，创建邻接（Adjacencies）[1]。多路访问网络以及非广播多路访问网络的路由器会选举指定路由器（Designated Router, DR）和备份指定路由器（Backup Designated Router, BDR），DR和BDR作为网络的中心负责路由器之间的信息交换从而降低了网络中的信息流量。OSPF协议同时使用单播（Unicast）和组播（Multicast）来发送Hello包和链路状态更新（Link State Updates），使用的组播地址为224.0.0.5和224.0.0.6。与RIP和BGP不同的是，OSPF协议不使用TCP或者UDP协议而是承载在IP协议之上，IP协议号为89，工作在OSI模型的传输层。</p>
+<h4 id="3-LDP"><a href="#3-LDP" class="headerlink" title="3.LDP"></a>3.LDP</h4><p>标签分发协议LDP（Label Distribution Protocol）是 MPLS 体系中的一种主要协议。在 MPLS 网络中，两个标签交换路由器（LSR）必须用在它们之间或通过它们转发流量的标签上达成一致。</p>
+<p>LDP 定义了一组程序和消息，通过它们一个 LSR 可以通知另一个 LSR 其已经形成的标签捆绑。通过网络层路由信息与数据链路层交换路径之间的直接映射，LSR 可以使用 LDP 协议通过网络来建立标签交换路径。</p>
+<p>利用 LDP 交换标签映射信息的两个标签交换路由器（LSR）作为 LDP 对等结点，并且它们之间有一个LDP标签分发协议会话。在一个单个会话中，每一个对等结点都能获得其它的标签映射，换句话说，这个协议是双向的。</p>
+<h4 id="4-MPLS"><a href="#4-MPLS" class="headerlink" title="4.MPLS"></a>4.MPLS</h4><p>以下内容来自维基百科：<br><a href="https://zh.wikipedia.org/wiki/%E5%A4%9A%E5%8D%8F%E8%AE%AE%E6%A0%87%E7%AD%BE%E4%BA%A4%E6%8D%A2" target="_blank" rel="external">MPLS</a></p>
+<p>多协议标签交换（英语：Multi-Protocol Label Switching，缩写为MPLS）是一种在开放的通信网上利用标签引导数据高速、高效传输的新技术。多协议的含义是指MPLS不但可以支持多种网络层层面上的协议，还可以兼容第二层的多种数据链路层技术。</p>
+<p>它的价值在于能够在一个无连接的网络中引入连接模式的特性；其主要优点是减少了网络复杂性，兼容现有各种主流网络技术，能降低网络成本，在提供IP业务时能确保QoS和安全性，具有流量工程能力。此外，MPLS能解决VPN扩展问题和维护成本问题。</p>
+<p>MPLS属于第三代网络架构，是新一代的IP高速骨干网络交换标准，由IETF所提出，由Cisco、ASCEND、3Com等网络设备大厂所主导。<br>采用MPLS的数据包只须在OSI第二层（数据链结层）执行硬件式交换（替换第三层（网络层）软件式routing），它集成了IP选径与第二层标记交换为单一的系统，因此可以解决Internet路由的问题，使数据包传送的延迟时间减短，增加网络传输的速度，更适合多媒体讯息的传送。因此，MPLS最大技术特色为可以指定数据包传送的先后顺序。MPLS使用标记交换（Label Switching），网络路由器只需要判别标记后即可进行转送处理。</p>
+<blockquote>
+<p>产生的背景:</p>
+<p>因特网迅猛发展对IP的承载网提出各种挑战，比如路由问题、QoS保障问题等。网络的发展正向宽带化、智能化和一体化的方向发展。未来的业务以突发性数据业务为主，ATM对其显得效率不足，传输和交换成本较高，而IP又显得能力不足。各种IP与ATM融合的技术如LANE, IPOA, TAG SWITCH等只能解决局部问题。</p>
+</blockquote>
+<p>相关的术语解释：</p>
+<p>转发等效类（Forwarding Equivalence Class,FEC）<br>是一系列具有某些共性的数据流集合(目的地相同、使用的转发路径相同、具有相同的服务等级等)，这些数据在转发的过程中被LSR以相同的方式进行处理;</p>
+<p>标记（Tag或Label）<br>简短的、长度固定的、具有本地意义的标识符，用以表征转发等价类（FEC）。</p>
+<p>边缘标记交换路由器（LER： Label Edge Router）<br>根据LSP等因素给分组加标签的路由器。</p>
+<p>标记交换路由器（LSR：Label Switched Router）<br>具有标记交换能力的路由器，它是标记交换的基本构成单元。</p>
+<p>数据流（stream）<br>沿着同一路径、属于同一FEC的一组包被视为一个数据流。</p>
+<p>业务流（flow）<br>一个应用到应用的数据流称为业务流。</p>
+<p>上游（upstream）和下游（downstream）<br>“上游”和“下游”是根据数据流的流向而定的。</p>
+<p>转发信息库（FIB）<br>FIB用于存放下一跳的相关信息。</p>
+<p>流分类<br>在业务流进入LSR时首先需要进行分类，也就是将业务流划分为不同的FEC。</p>
+<p>标记交换的封装<br>标记交换是一种支持多协议的技术，它可以在多种链路协议上运行。</p>
+<p>流量工程（Traffic Engineering）<br>根据用户数据业务量及当前网络状态选择数据传输路径的过程，主要用来平衡网络中的负荷；</p>
+<p>标签分发协议（LDP：Label Distribution Protocol ）<br>控制LSR之间交换标签与FEC绑定消息，协调LSR之间工作的一系列规程。主要功能：让LSR实现FEC与标签的绑定，并将这种绑定通知给相邻的LSR，使各LSR对收到的标签绑定达成共识。</p>
+<p>标签堆栈<br>MPLS中分组可以携带多个标签，这些标签在分组中以“堆栈”的形式存在，对标签堆栈的操作按照“后进先出”的原则。决定如何转发分组的标签始终是栈顶标签。</p>
+<h4 id="5-BGP"><a href="#5-BGP" class="headerlink" title="5.BGP"></a>5.BGP</h4><p>以下内容来自维基百科：<br><a href="https://zh.wikipedia.org/wiki/%E8%BE%B9%E7%95%8C%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AE" target="_blank" rel="external">边界网关协议</a></p>
+<p>边界网关协议（英文：Border Gateway Protocol, BGP）是互联网上一个核心的去中心化自治路由协议。它通过维护IP路由表或‘前缀’表来实现自治系统（AS）之间的可达性，属于矢量路由协议。BGP不使用传统的内部网关协议（IGP）的指标，而使用基于路径、网络策略或规则集来决定路由。因此，它更适合被称为矢量性协议，而不是路由协议。</p>
+<p>BGP是为了替换外部网关协议（EGP）协议而创建的，允许运行一个完全分散的路由系统，从ARPANET模型的核心路由系统过渡到包括NSFNET骨干网及其相关区域网络的分散系统。这使得互联网成为一个真正的分权制度。自1994年以来，第四版本的BGP在互联网上使用，所有以前的版本现在已经过时不可用。在第4版主要的增强功能是通过支持无类别域间路由和路由聚合来减少路由表的大小。第4版是在早期的 RFC 1771 第4版的基础上编纂，通过20多个草案修改，最终在2006年1月通过形成 RFC 4271 。RFC 4271版本纠正了一些错误，澄清模糊之处，带来了更接近工业级应用标准的RFC行业惯例。</p>
+<p>大多数互联网服务提供商（ISP）必须使用BGP来与其他ISP创建路由连接（尤其是当它们采取多宿主连接时）。因此，即使大多数互联网用户不直接使用它，但是与7号信令系统（SS7）相比，即通过PSTN的跨供应商核心响应设置协议，BGP仍然是互联网最重要的协议之一。特大型的私有IP网络也可以使用BGP。例如当需要将若干个大型的开放最短路径优先（OSPF）网络进行合并，而开放最短路径优先协议本身又无法提供这种可扩展性时。使用BGP的另一个原因是其能为多宿主的单个ISP（RFC 1998）或多个ISP网络提供更好的冗余网络。</p>
+<h4 id="6-ACL"><a href="#6-ACL" class="headerlink" title="6.ACL"></a>6.ACL</h4><p>访问控制列表（Access Control List，ACL） 是路由器和交换机接口的指令列表，用来控制端口进出的数据包。ACL适用于所有的被路由协议，如IP、IPX、AppleTalk等。</p>
+<p>信息点间通信和内外网络的通信都是企业网络中必不可少的业务需求，为了保证内网的安全性，需要通过安全策略来保障非授权用户只能访问特定的网络资源，从而达到对访问进行控制的目的。简而言之，ACL可以过滤网络中的流量，是控制访问的一种网络技术手段。</p>
+<p>配置ACL后，可以限制网络流量，允许特定设备访问，指定转发特定端口数据包等。如可以配置ACL，禁止局域网内的设备访问外部公共网络，或者只能使用FTP服务。ACL既可以在路由器上配置，也可以在具有ACL功能的业务软件上进行配置。</p>
+<p>ACL是物联网中保障系统安全性的重要技术，在设备硬件层安全基础上，通过对在软件层面对设备间通信进行访问控制，使用可编程方法指定访问规则，防止非法设备破坏系统安全，非法获取系统数据。</p>
+<hr>
+<blockquote>
+<p>作用：<br>ACL可以限制网络流量、提高网络性能。例如，ACL可以根据数据包的协议，指定数据包的优先级。</p>
+<p>ACL提供对通信流量的控制手段。例如，ACL可以限定或简化路由更新信息的长度，从而限制通过路由器某一网段的通信流量。<br>ACL是提供网络安全访问的基本手段。ACL允许主机A访问人力资源网络，而拒绝主机B访问。</p>
+<p>ACL可以在路由器端口处决定哪种类型的通信流量被转发或被阻塞。例如，用户可以允许E-mail通信流量被路由，拒绝所有的Telnet通信流量。</p>
+<p>例如：某部门要求只能使用 WWW 这个功能，就可以通过ACL实现； 又例如，为了某部门的保密性，不允许其访问外网，也不允许外网访问它，就可以通过ACL实现。</p>
+</blockquote>
+<hr>
+<h3 id="静态路由"><a href="#静态路由" class="headerlink" title="静态路由"></a>静态路由</h3><p>静态路由是指由用户或网络管理员手工配置的路由信息。当网络的拓扑结构或链路的状态发生变化时，网络管理员需要手工去修改路由表中相关的静态路由信息。静态路由信息在缺省情况下是私有的，不会传递给其他的路由器。当然，网管员也可以通过对路由器进行设置使之成为共享的。静态路由一般适用于比较简单的网络环境，在这样的环境中，网络管理员易于清楚地了解网络的拓扑结构，便于设置正确的路由信息。</p>
+<p>优点：</p>
+<p>使用静态路由的另一个好处是网络安全保密性高。动态路由因为需要路由器之间频繁地交换各自的路由表，而对路由表的分析可以揭示网络的拓扑结构和网络地址等信息。因此，网络出于安全方面的考虑也可以采用静态路由。不占用网络带宽，因为静态路由不会产生更新流量。</p>
+<p>缺点：</p>
+<p>大型和复杂的网络环境通常不宜采用静态路由。一方面，网络管理员难以全面地了解整个网络的拓扑结构；另一方面，当网络的拓扑结构和链路状态发生变化时，路由器中的静态路由信息需要大范围地调整，这一工作的难度和复杂程度非常高。当网络发生变化或网络发生故障时，不能重选路由，很可能使路由失败。</p>
+<h3 id="骨干网"><a href="#骨干网" class="headerlink" title="骨干网"></a>骨干网</h3><p>Internet backbone：Internet 骨干网<br>几台计算机连接起来，互相可以看到其他人的文件，这叫局域网，整个城市的计算机都连接起来，就是城域网，把城市之间连接起来的网就叫骨干网。这些骨干网是国家批准的可以直接和国外连接的互联网。其他有接入功能的ISP（互联网服务提供商）想连到国外都得通过这些骨干网。</p>
+<p>“骨干网”通常是用于描述大型网络结构时经常使用的词语，描述网络结构，主要是要看清楚网络拓扑结构，而非具体使用的传输方式或协议。骨干网一般都是广域网:作用范围几十到几千公里.<br>骨干网是由多种传输方式，多种协议组合构成的。</p>
+<p>目前我国拥有9大骨干网：</p>
+<p>❶．中国公用计算机互联网(CHINANET)</p>
+<p>❷．中国金桥信息网(CHINAGBN)</p>
+<p>❸．中国联通计算机互联网(UNINET)</p>
+<p>❹．中国网通公用互联网(CNCNET)</p>
+<p>❺．中国移动互联网(CMNET)</p>
+<p>❻．中国教育和科研计算机网(CERNET)</p>
+<p>❼．中国科技网 (CSTNET)</p>
+<p>❽．中国长城互联网(CGWNET)</p>
+<p>❾．中国国际经济贸易互联网(CIETNET)</p>
+<h2 id="如何体现智能？"><a href="#如何体现智能？" class="headerlink" title="如何体现智能？"></a>如何体现智能？</h2><p>1.学习能力</p>
+<p>由人类专家定义规则—&gt;自主学习得到规则</p>
+<p>2.预测能力</p>
+<p>事后被动处理—&gt;事前主动预测</p>
+<p>3.演进能力</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/机器学习/" rel="tag">#机器学习</a>
+          
+            <a href="/tags/双十一技术内幕/" rel="tag">#双十一技术内幕</a>
+          
+            <a href="/tags/网络/" rel="tag">#网络</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/28/设计模式读书笔记/" rel="next" title="设计模式读书笔记(1)">
+                <i class="fa fa-chevron-left"></i> 设计模式读书笔记(1)
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/12/07/日常学习记录/"
+           data-title="日常学习记录" data-url="http://yoursite.com/2016/12/07/日常学习记录/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="刘智超" />
+          <p class="site-author-name" itemprop="name">刘智超</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/liu-zhi-chao-12" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/1761686483/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/zhichaoleo" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/zhichaoleo" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#日常学习记录-之-双十一技术讲座学习"><span class="nav-number">1.</span> <span class="nav-text">日常学习记录 之 双十一技术讲座学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#强化学习"><span class="nav-number">1.1.</span> <span class="nav-text">强化学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双十一中的网络巡检"><span class="nav-number">1.2.</span> <span class="nav-text">双十一中的网络巡检</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑资源："><span class="nav-number">1.2.1.</span> <span class="nav-text">逻辑资源：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-IP地址"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">1.IP地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-VLAN"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">2.VLAN</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-MTU"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">3.MTU</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-NTP"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">4.NTP</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#协议状态"><span class="nav-number">1.2.2.</span> <span class="nav-text">协议状态</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网络协议的层次关系"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">网络协议的层次关系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-ISIS"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">1.ISIS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-OSPF"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">2.OSPF</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-LDP"><span class="nav-number">1.2.2.4.</span> <span class="nav-text">3.LDP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-MPLS"><span class="nav-number">1.2.2.5.</span> <span class="nav-text">4.MPLS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-BGP"><span class="nav-number">1.2.2.6.</span> <span class="nav-text">5.BGP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-ACL"><span class="nav-number">1.2.2.7.</span> <span class="nav-text">6.ACL</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#静态路由"><span class="nav-number">1.2.3.</span> <span class="nav-text">静态路由</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#骨干网"><span class="nav-number">1.2.4.</span> <span class="nav-text">骨干网</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何体现智能？"><span class="nav-number">1.3.</span> <span class="nav-text">如何体现智能？</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">刘智超</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"zhichaoleo"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("HuhIJnw6ujkjA28uNWERXVBJ-gzGzoHsz", "jdijrm0wHAIzDHelo4MXNt7a");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>

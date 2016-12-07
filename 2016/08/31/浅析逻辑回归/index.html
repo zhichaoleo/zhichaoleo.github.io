@@ -86,15 +86,13 @@
 
 
 
-<meta name="description" content="#初探logistic回归
-
+<meta name="description" content="初探logistic回归
 优点：计算代价低，易于实现。缺点：容易欠拟合，分类精度可能不高，只能处理二分类问题且必须线性可分。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅析逻辑回归">
 <meta property="og:url" content="http://yoursite.com/2016/08/31/浅析逻辑回归/index.html">
 <meta property="og:site_name" content="百世经纶一页书">
-<meta property="og:description" content="#初探logistic回归
-
+<meta property="og:description" content="初探logistic回归
 优点：计算代价低，易于实现。缺点：容易欠拟合，分类精度可能不高，只能处理二分类问题且必须线性可分。">
 <meta property="og:image" content="https://img3.doubanio.com/lpic/s28280564.jpg">
 <meta property="og:image" content="https://img3.doubanio.com/lpic/s9114855.jpg">
@@ -106,11 +104,10 @@
 <meta property="og:image" content="http://oc8mbq27q.bkt.clouddn.com/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E6%A2%AF%E5%BA%A6%E4%B8%8A%E5%8D%87%E6%B3%95.png">
 <meta property="og:image" content="http://oc8mbq27q.bkt.clouddn.com/%E9%9A%8F%E6%9C%BA%E6%A2%AF%E5%BA%A6%E4%B8%8A%E5%8D%87%E6%B3%95.png">
 <meta property="og:image" content="http://oc8mbq27q.bkt.clouddn.com/%E6%94%B9%E8%BF%9B%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%A2%AF%E5%BA%A6%E4%B8%8A%E5%8D%87%E6%B3%95.png">
-<meta property="og:updated_time" content="2016-09-06T13:23:49.000Z">
+<meta property="og:updated_time" content="2016-12-07T03:34:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅析逻辑回归">
-<meta name="twitter:description" content="#初探logistic回归
-
+<meta name="twitter:description" content="初探logistic回归
 优点：计算代价低，易于实现。缺点：容易欠拟合，分类精度可能不高，只能处理二分类问题且必须线性可分。">
 <meta name="twitter:image" content="https://img3.doubanio.com/lpic/s28280564.jpg">
 
@@ -405,13 +402,11 @@
       
 
       
-        <p>#初探logistic回归</p>
-<blockquote>
+        <h1 id="初探logistic回归"><a href="#初探logistic回归" class="headerlink" title="初探logistic回归"></a>初探logistic回归</h1><blockquote>
 <p>优点：计算代价低，易于实现。<br>缺点：容易欠拟合，分类精度可能不高，只能处理二分类问题且必须线性可分。</p>
 </blockquote>
 <a id="more"></a>
-<p>###1.1何为logistic回归</p>
-<p>逻辑回归的用途十分广泛，主要用来进行预测，也被看做是一种概率估计。这一点可以参考吴军老师的《数学之美》——第28章　逻辑回归和搜索广告，还有刘鹏老师的《计算广告》。<br><img src="https://img3.doubanio.com/lpic/s28280564.jpg" alt="计算广告"><br><img src="https://img3.doubanio.com/lpic/s9114855.jpg" alt="数学之美"><br>逻辑回归模型是将一个事件出现的概率适应到一条逻辑曲线上。逻辑曲线是一条S形的曲线，其特点是开始变化快，逐渐减慢，最后饱和。逻辑自回归的好处是它的变量是从负无穷到正无穷，而值域范围限制在0-1之间。我们知道对应于[0,1]之间的函数可以是一个概率函数，这样逻辑回归函数就可以和一个概率分别联系起来了。<br>强调一下回归的定义：</p>
+<h3 id="1-1何为logistic回归"><a href="#1-1何为logistic回归" class="headerlink" title="1.1何为logistic回归"></a>1.1何为logistic回归</h3><p>逻辑回归的用途十分广泛，主要用来进行预测，也被看做是一种概率估计。这一点可以参考吴军老师的《数学之美》——第28章　逻辑回归和搜索广告，还有刘鹏老师的《计算广告》。<br><img src="https://img3.doubanio.com/lpic/s28280564.jpg" alt="计算广告"><br><img src="https://img3.doubanio.com/lpic/s9114855.jpg" alt="数学之美"><br>逻辑回归模型是将一个事件出现的概率适应到一条逻辑曲线上。逻辑曲线是一条S形的曲线，其特点是开始变化快，逐渐减慢，最后饱和。逻辑自回归的好处是它的变量是从负无穷到正无穷，而值域范围限制在0-1之间。我们知道对应于[0,1]之间的函数可以是一个概率函数，这样逻辑回归函数就可以和一个概率分别联系起来了。<br>强调一下回归的定义：</p>
 <blockquote>
 <p>假设现在有一些数据点，用一条直线对这些点进行拟合的话，这个拟合的过程就是回归。</p>
 </blockquote>
@@ -422,7 +417,7 @@
 <p>根据现有数据对分类边界线建立回归公式，以此进行数据的分类。<br>可以注意到，我们建立的是回归公式。“回归”源于最佳拟合，这意味着我们要找到最佳的参数集，这个参数集需要我们通过数据训练得到。</p>
 </blockquote>
 <p>在这里，我们训练的方法将使用梯度上升法，还有它的改进版本，随机梯度上升法。<br><img src="http://oc8mbq27q.bkt.clouddn.com/2789356-d00e58e56418aaf2.png" alt="梯度上升法"></p>
-<p>###1.2构造分类器<br>为什么不使用海维赛德阶跃函数（单位阶跃函数）：<br>在跳跃点上瞬间从0跳跃到1，这个过程太激凸…<br>我们用sigmoid函数，温和不刺激~</p>
+<h3 id="1-2构造分类器"><a href="#1-2构造分类器" class="headerlink" title="1.2构造分类器"></a>1.2构造分类器</h3><p>为什么不使用海维赛德阶跃函数（单位阶跃函数）：<br>在跳跃点上瞬间从0跳跃到1，这个过程太激凸…<br>我们用sigmoid函数，温和不刺激~</p>
 <p><img src="http://oc8mbq27q.bkt.clouddn.com/2789356-39066ba21a82d721.gif" alt=""></p>
 <p><img src="http://oc8mbq27q.bkt.clouddn.com/2789356-2bbb64e633c61a5d.png" alt="SigmoidFunction"></p>
 <p>这样我们就有了基本的构件模型，下一步就是函数的输入z<br>我们将特征变量乘以回归系数再全部累加得到Z:</p>
@@ -557,7 +552,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -574,7 +569,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -654,7 +649,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#初探logistic回归"><span class="nav-number">1.</span> <span class="nav-text">初探logistic回归</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1何为logistic回归"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.1何为logistic回归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2构造分类器"><span class="nav-number">1.0.2.</span> <span class="nav-text">1.2构造分类器</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
